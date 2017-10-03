@@ -17,6 +17,3 @@ The ten concepts are as follows:
   8)Data Hiding: Hiding data to allow access only to what is completely necessary, increasing security through less easily discovered details.   
   9)Simplicity: The simplification of a program allows for easier interpretation of said program, leading to easily applied security.  
   10)Minimization: The shortening of a program to minimize the size of a possible target of an attack. 
-
-  
-  75
