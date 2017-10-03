@@ -15,5 +15,5 @@ The ten concepts are as follows:
   6)Layering: The layering of protocols to create multiple levels of security.
   7)Abstraction: The representing of an object in an abstract way. Allows for increased security by being less open about details surrounding objects.  
   8)Data Hiding: Hiding data to allow access only to what is completely necessary, increasing security through less easily discovered details.   
-  9)Simplicity: The simplification of a programs allows for easier interpretation of said program, leading to easily applied security.  
+  9)Simplicity: The simplification of a program allows for easier interpretation of said program, leading to easily applied security.  
   10)Minimization: The shortening of a program to minimize the size of a possible target of an attack. 
