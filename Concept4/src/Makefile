@@ -1,12 +1,12 @@
 
-output: LeastPrivilageExample.o LeastPrivilageNonExample.o
-    g++ LeastPrivilageExample.o LeastPrivilageNonExample.o
-    
-LeastPrivilageExample.o: LeastPrivilageExample.cpp
-    g++ -c LeastPrivilageExample.cpp
-    
-LeastPrivilageNonExample.o: LeastPrivilageNonExample.cpp
-    g++ -c LeastPrivilageNonExample.cpp
-    
-clean:
-    rm *.o output
+all: LeastPrivilageExample
+
+LeastPrivilageExample: LeastPrivilageExample.cpp
+	g++ LeastPrivilageExample.cpp -o $(shell pwd)/bin/LeastPrivilageExample
+	g++ LeastPrivilageExample.cpp -o $(shell pwd)/bin/LeastPrivilageExampleAssembly -s
+   
+LeastPrivilageNonExample: LeastPrivilageNonExample.cpp
+	g++ LeastPrivilageNonExample.cpp -o $(shell pwd)/bin/LeastPrivilageNonExample
+	g++ LeastPrivilageNonExample.cpp -o $(shell pwd)/bin/LeastPrivilageNonExampleAssembly -s 
+
+$(shell mkdir -p $(shell pwd)/bin)

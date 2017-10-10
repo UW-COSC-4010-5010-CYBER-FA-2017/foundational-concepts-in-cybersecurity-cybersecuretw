@@ -1,12 +1,12 @@
 
-output: MinimizationExample.o MinimizationNonExample.o
-    g++ MinimizationExample.o MinimizationNonExample.o
-    
-MinimizationExample.o: MinimizationExample.cpp
-    g++ -c MinimizationExample.cpp
-    
-MinimizationNonExample.o: MinimizationNonExample.cpp
-    g++ -c MinimizationNonExample.cpp
-    
-clean:
-    rm *.o output
+all: MinimizationExample MinimizationNonExample
+
+MinimizationExample: MinimizationExample.cpp
+	g++ MinimizationExample.cpp -o $(shell pwd)/bin/MinimizationExample
+	g++ MinimizationExample.cpp -o $(shell pwd)/bin/MinimizationExampleAssembly -s
+   
+MinimizationNonExample: MinimizationNonExample.cpp
+	g++ MinimizationNonExample.cpp -o $(shell pwd)/bin/MinimizationNonExample
+	g++ MinimizationNonExample.cpp -o $(shell pwd)/bin/MinimizationNonExampleAssembly -s 
+
+$(shell mkdir -p $(shell pwd)/bin)

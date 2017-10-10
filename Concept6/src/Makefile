@@ -1,12 +1,11 @@
+all: LayeringExample
 
-output: LayeringExample.o LayeringNonExample.o
-    g++ LayeringExample.o LayeringNonExample.o
-    
-LayeringExample.o: LayeringExample.cpp
-    g++ -c LayeringExample.cpp
-    
-LayeringNonExample.o: LayeringNonExample.cpp
-    g++ -c LayeringNonExample.cpp
-    
-clean:
-    rm *.o output
+LayeringExample: LayeringExample.cpp
+	g++ LayeringExample.cpp -o $(shell pwd)/bin/LayeringExample
+	g++ LayeringExample.cpp -o $(shell pwd)/bin/LayeringExampleAssembly -s
+   
+LayeringNonExample: LayeringNonExample.cpp
+	g++ LayeringNonExample.cpp -o $(shell pwd)/bin/LayeringNonExample
+	g++ LayeringNonExample.cpp -o $(shell pwd)/bin/LayeringNonExampleAssembly -s 
+
+$(shell mkdir -p $(shell pwd)/bin)

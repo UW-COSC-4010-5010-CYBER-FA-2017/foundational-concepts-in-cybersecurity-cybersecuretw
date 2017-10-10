@@ -1,12 +1,11 @@
+all: SimplicityExample
 
-output: SimplicityExample.o SimplicityNonExample.o
-    g++ SimplicityExample.o SimplicityNonExample.o
-    
-SimplicityExample.o: SimplicityExample.cpp
-    g++ -c SimplicityExample.cpp
-    
-SimplicityNonExample.o: SimplicityNonExample.cpp
-    g++ -c SimplicityNonExample.cpp
-    
-clean:
-    rm *.o output
+SimplicityExample: SimplicityExample.cpp
+	g++ SimplicityExample.cpp -o $(shell pwd)/bin/SimplicityExample
+	g++ SimplicityExample.cpp -o $(shell pwd)/bin/SimplicityExampleAssembly -s
+   
+SimplicityNonExample: SimplicityNonExample.cpp
+	g++ SimplicityNonExample.cpp -o $(shell pwd)/bin/SimplicityNonExample
+	g++ SimplicityNonExample.cpp -o $(shell pwd)/bin/SimplicityNonExampleAssembly -s 
+
+$(shell mkdir -p $(shell pwd)/bin)
