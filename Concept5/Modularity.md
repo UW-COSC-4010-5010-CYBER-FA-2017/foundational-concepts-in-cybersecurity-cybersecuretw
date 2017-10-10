@@ -1,1 +1,2 @@
-
+Modulularity example: In this program we have a simple IO prompt asking for a width, length, and height of a box. The main function of the program calls functions in order to post instructions, take inputs in, calculate the volume of the box, and finally summarize the given inputs and found volume. This program is a good example of modularity because if one function is compromised, the others are not automatically compromised as well. 
+Modularity nonexample: In this version of the previous program, there is only one function (main). In this main function, all communication with the user, calculation, and storage is done in the same place. This allows for vulnerabilitys in one of these areas to "break" the rest of the code, due to it's non modularity. 
