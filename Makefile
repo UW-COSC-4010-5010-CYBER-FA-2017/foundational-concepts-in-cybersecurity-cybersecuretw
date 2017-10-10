@@ -5,7 +5,7 @@ MinimizationExample: Concept10/src/MinimizationExample.cpp
 	g++ Concept10/src/MinimizationExample.cpp -o $(shell pwd)/bin/MinimizationExample
 	g++ Concept10/src/MinimizationExample.cpp -o $(shell pwd)/bin/MinimizationExampleAssembly -s
    
-MinimizationNonExample: Concept4/src/MinimizationNonExample.cpp
+MinimizationNonExample: Concept10/src/MinimizationNonExample.cpp
 	g++ Concept10/src/MinimizationNonExample.cpp -o $(shell pwd)/bin/MinimizationNonExample
 	g++ Concept10/src/MinimizationNonExample.cpp -o $(shell pwd)/bin/MinimizationNonExampleAssembly -s 
 
