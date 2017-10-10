@@ -1,7 +1,7 @@
 //Thomas Wilkinson
 //10/4/2017
 //Cosc 4010 - CyberSecurity
-//#4 - simplicity - NONexample
+//#9 - simplicity - NONexample
 
 using namespace::std;
 #include <iostream>
