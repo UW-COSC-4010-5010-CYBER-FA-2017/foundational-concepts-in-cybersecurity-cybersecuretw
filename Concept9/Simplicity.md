@@ -47,3 +47,4 @@ Upon reading, it is much more likely that a programmer will make a mistake than 
 
 
 ![simplicity Image](Capture.PNG) 
+(more complex code is more likely to confuse and aggrivate programmers, making it more likely that there is a mistake made.)
