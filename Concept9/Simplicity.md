@@ -46,4 +46,4 @@ void HelloWorld::sayHello()
 Upon reading, it is much more likely that a programmer will make a mistake than with the simple code, therefor making this code much less secure. 
 
 
-![Layering Image](Capture.PNG) 
+![simplicity Image](Capture.PNG) 
