@@ -1,5 +1,5 @@
  
-all: MinimizationExample MinimizationNonExample LeastPrivilageExample LeastPrivilageNonExample ModularityExample ModularityNonExample LayeringExample LayeringNonExample SimplicityExample SimplicityNonExample
+all: DomainSeperationExample DomainSeperationNonExample MinimizationExample MinimizationNonExample LeastPrivilageExample LeastPrivilageNonExample ModularityExample ModularityNonExample LayeringExample LayeringNonExample SimplicityExample SimplicityNonExample
 
 MinimizationExample: Concept10/src/MinimizationExample.cpp
 	g++ Concept10/src/MinimizationExample.cpp -o $(shell pwd)/bin/MinimizationExample
@@ -41,4 +41,13 @@ SimplicityNonExample: Concept9/src/SimplicityNonExample.cpp
 	g++ Concept9/src/SimplicityNonExample.cpp -o $(shell pwd)/bin/SimplicityNonExample
 	g++ Concept9/src/SimplicityNonExample.cpp -o $(shell pwd)/bin/SimplicityNonExampleAssembly -s 
 
+DomainSeperationExample: Concept1/src/DomainSeperationExample.cpp
+	g++ Concept1/src/DomainSeperationExample.cpp -o $(shell pwd)/bin/DomainSeperationExample
+	g++ Concept1/src/DomainSeperationExample.cpp -o $(shell pwd)/bin/DomainSeperationExampleAssembly -s
+   
+DomainSeperationNonExample: Concept1/src/DomainSeperationNonExample.cpp
+	g++ Concept1/src/DomainSeperationNonExample.cpp -o $(shell pwd)/bin/DomainSeperationNonExample
+	g++ Concept1/src/DomainSeperationNonExample.cpp -o $(shell pwd)/bin/DomainSeperationNonExampleAssembly -s 
+
+    
 $(shell mkdir -p $(shell pwd)/bin)

@@ -1,5 +1,5 @@
 
-all: LeastPrivilageExample
+all: LeastPrivilageExample LeastPrivilageNonExample
 
 LeastPrivilageExample: LeastPrivilageExample.cpp
 	g++ LeastPrivilageExample.cpp -o $(shell pwd)/bin/LeastPrivilageExample

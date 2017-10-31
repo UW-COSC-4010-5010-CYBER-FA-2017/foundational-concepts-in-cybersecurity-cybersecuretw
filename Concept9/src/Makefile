@@ -1,4 +1,4 @@
-all: SimplicityExample
+all: SimplicityExample SimplicityNonExample
 
 SimplicityExample: SimplicityExample.cpp
 	g++ SimplicityExample.cpp -o $(shell pwd)/bin/SimplicityExample

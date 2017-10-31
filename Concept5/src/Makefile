@@ -1,4 +1,4 @@
-all: ModularityExample
+all: ModularityExample ModularityNonExample
 
 ModularityExample: ModularityExample.cpp
 	g++ ModularityExample.cpp -o $(shell pwd)/bin/ModularityExample

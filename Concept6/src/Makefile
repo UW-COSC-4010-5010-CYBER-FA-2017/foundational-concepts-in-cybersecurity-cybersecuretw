@@ -1,4 +1,4 @@
-all: LayeringExample
+all: LayeringExample LayeringNonExample
 
 LayeringExample: LayeringExample.cpp
 	g++ LayeringExample.cpp -o $(shell pwd)/bin/LayeringExample
