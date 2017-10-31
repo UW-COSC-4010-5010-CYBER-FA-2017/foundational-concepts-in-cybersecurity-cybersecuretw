@@ -1,5 +1,5 @@
  
-all: DomainSeperationExample DomainSeperationNonExample MinimizationExample MinimizationNonExample LeastPrivilageExample LeastPrivilageNonExample ModularityExample ModularityNonExample LayeringExample LayeringNonExample SimplicityExample SimplicityNonExample
+all: DataHidingExample DataHidingNonExample AbstractionExample AbstractionNonExample ResourceEncapsulationExample ResourceEncapsulationNonExample ProcessIsolationExample ProcessIsolationNonExample DomainSeperationExample DomainSeperationNonExample MinimizationExample MinimizationNonExample LeastPrivilageExample LeastPrivilageNonExample ModularityExample ModularityNonExample LayeringExample LayeringNonExample SimplicityExample SimplicityNonExample
 
 MinimizationExample: Concept10/src/MinimizationExample.cpp
 	g++ Concept10/src/MinimizationExample.cpp -o $(shell pwd)/bin/MinimizationExample
@@ -49,5 +49,36 @@ DomainSeperationNonExample: Concept1/src/DomainSeperationNonExample.cpp
 	g++ Concept1/src/DomainSeperationNonExample.cpp -o $(shell pwd)/bin/DomainSeperationNonExample
 	g++ Concept1/src/DomainSeperationNonExample.cpp -o $(shell pwd)/bin/DomainSeperationNonExampleAssembly -s 
 
+ProcessIsolationExample: Concept2/src/ProcessIsolationExample.cpp
+	g++ Concept2/src/ProcessIsolationExample.cpp -o $(shell pwd)/bin/ProcessIsolationExample
+	g++ Concept2/src/ProcessIsolationExample.cpp -o $(shell pwd)/bin/ProcessIsolationExampleAssembly -s
+   
+ProcessIsolationNonExample: Concept2/src/ProcessIsolationNonExample.cpp
+	g++ Concept2/src/ProcessIsolationNonExample.cpp -o $(shell pwd)/bin/ProcessIsolationNonExample
+	g++ Concept2/src/ProcessIsolationNonExample.cpp -o $(shell pwd)/bin/ProcessIsolationNonExampleAssembly -s 
+    
+ResourceEncapsulationExample: Concept3/src/ResourceEncapsulationExample.cpp
+	g++ Concept3/src/ResourceEncapsulationExample.cpp -o $(shell pwd)/bin/ResourceEncapsulationExample
+	g++ Concept3/src/ResourceEncapsulationExample.cpp -o $(shell pwd)/bin/ResourceEncapsulationExampleAssembly -s
+   
+ResourceEncapsulationNonExample: Concept3/src/ResourceEncapsulationNonExample.cpp
+	g++ Concept3/src/ResourceEncapsulationNonExample.cpp -o $(shell pwd)/bin/ResourceEncapsulationNonExample
+	g++ Concept3/src/ResourceEncapsulationNonExample.cpp -o $(shell pwd)/bin/ResourceEncapsulationNonExampleAssembly -s 
+    
+AbstractionExample: Concept7/src/AbstractionExample.cpp
+	g++ Concept7/src/AbstractionExample.cpp -o $(shell pwd)/bin/AbstractionExample
+	g++ Concept7/src/AbstractionExample.cpp -o $(shell pwd)/bin/AbstractionExampleAssembly -s
+   
+AbstractionNonExample: Concept7/src/AbstractionNonExample.cpp
+	g++ Concept7/src/AbstractionNonExample.cpp -o $(shell pwd)/bin/AbstractionNonExample
+	g++ Concept7/src/AbstractionNonExample.cpp -o $(shell pwd)/bin/AbstractionNonExampleAssembly -s 
+    
+DataHidingExample: Concept8/src/DataHidingExample.cpp
+	g++ Concept8/src/DataHidingExample.cpp -o $(shell pwd)/bin/DataHidingExample
+	g++ Concept8/src/DataHidingExample.cpp -o $(shell pwd)/bin/DataHidingExampleAssembly -s
+   
+DataHidingNonExample: Concept8/src/DataHidingNonExample.cpp
+	g++ Concept8/src/DataHidingNonExample.cpp -o $(shell pwd)/bin/DataHidingNonExample
+	g++ Concept8/src/DataHidingNonExample.cpp -o $(shell pwd)/bin/DataHidingNonExampleAssembly -s 
     
 $(shell mkdir -p $(shell pwd)/bin)
